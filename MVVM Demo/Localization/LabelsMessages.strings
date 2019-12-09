@@ -1,0 +1,18 @@
+/* 
+  staticMessages.strings
+  MVVM Demo
+
+  Created by Malav Soni on 12/11/19.
+  Copyright © 2019 Malav Soni. All rights reserved.
+*/
+
+// Login & SignUp Controller
+"welcome" = "Welcome,";
+"signInToContinue" = "Sign in to continue";
+"email" = "Email";
+"password" = "Password";
+"strOR" = "-OR-";
+
+
+// Default API Call Failure Message
+"somethingWentWrong" = "Something went wrong from server. Please try again later";

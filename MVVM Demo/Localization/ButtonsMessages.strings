@@ -1,0 +1,20 @@
+/* 
+  buttons.strings
+  MVVM Demo
+
+  Created by Malav Soni on 12/11/19.
+  Copyright © 2019 Malav Soni. All rights reserved.
+*/
+"signup" = "Sign Up";
+"forgotPasswordButton" = "Forgot Password?";
+"signInButton" = "SIGN IN";
+    
+"strSignInWithFacebook" = "Sign In With Facebook";
+"strSignInWithGoogle" = "Sign In With Google";
+
+"alertTitle" = "Oops";
+
+"alertButtonOk" = "Continue";
+"alertButtonLogin" = "Log In";
+"alertButtonCancel" = "Cancel";
+"alertButtonSettings" = "Settings";

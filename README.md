@@ -1,2 +1,1 @@
-# MVVM-by-Malav
-A complete MVVM starter pack.
+# MVVM-Demo-by-Malav

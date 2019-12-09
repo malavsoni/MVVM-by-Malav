@@ -1,0 +1,13 @@
+/* 
+  validationMessages.strings
+  MVVM Demo
+
+  Created by Malav Soni on 12/11/19.
+  Copyright © 2019 Malav Soni. All rights reserved.
+*/
+
+// Login & SignUp Controller
+"enterEmailAndPassword" = "Please enter your email address and password";
+"enterEmail" = "Email address cannot be blank";
+"enterValidEmail" = "Please enter valid email address.";
+"enterPassword" = "Password cannot be blank"; 
