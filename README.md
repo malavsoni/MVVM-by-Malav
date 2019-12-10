@@ -35,3 +35,5 @@ This project contains all the things which are generally used in any project.
 I hope you guys like this project.
 
 Please let me know if you think we should make any change in the above architecture or if you want me to add anything else to it. 
+
+#mvvm #ios #architecture
