@@ -6,7 +6,7 @@ I am here again with the new stuff which I believe every developer wanted to.
 
 The MVVM for iOS Application. 
 
-I have read so many blogs about how the MVVM Architecture and how you should divide the roles and responsibility to different classes which helps you to maintain your code very efficiently. It also helps you to debug your issues as well because you always know which class is responsible for the behaviours and display logics.
+I have read so many blogs about the MVVM Architecture and how you should divide the roles and responsibility to different classes which helps you to maintain your code very efficiently. It also helps you to debug your issues as well because you always know which class is responsible for the behaviors and display logics.
 
 The reason why I have made this project is that in every article or blog I have read they always explain some portion of the code while this project can be used as a template to get started with your new application with MVVM.
 
