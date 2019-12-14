@@ -1,4 +1,4 @@
-# MVVM for iOS by Malav Soni
+# MVVM Architecture for iOS by Malav Soni
 
 Hello Everyone,
 
