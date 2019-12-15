@@ -11,6 +11,11 @@ import UIKit
 struct Country:Codable {
     var name:String
     var capital:String
+    
+    init(withName name:String,andCapital capital:String) {
+        self.name = name
+        self.capital = capital
+    }
      
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)

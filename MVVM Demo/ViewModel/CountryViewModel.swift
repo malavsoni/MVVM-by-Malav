@@ -24,4 +24,8 @@ class CountryViewModel: NSObject {
     func getCapital() -> String{
         return self.countryInfo.capital
     }
+    
+    func getDescription() -> String {
+        return "\(self.getName()), \(self.getCapital())"
+    }
 }
