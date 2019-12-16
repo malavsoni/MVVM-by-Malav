@@ -22,15 +22,15 @@ class CountryListViewModel: NSObject {
     }
     
     func fetchCountries() -> Void{
-        MSServiceManager.shared.getCountryList { (aryCountry, error) in
+        MSServiceManager.shared.getCountryList {[weak self] (aryCountry, error) in
             if let error = error{
-                self.delegate?.failedToGetCountries(withError: error)
+                self?.delegate?.failedToGetCountries(withError: error)
             }else{
                 var aryCountryViewModel:[CountryViewModel] = []
                 for country in aryCountry{
                     aryCountryViewModel.append(CountryViewModel.init(withCountry: country))
                 }
-                self.delegate?.didReceive(countries: aryCountryViewModel)
+                self?.delegate?.didReceive(countries: aryCountryViewModel)
             }
         }
     }

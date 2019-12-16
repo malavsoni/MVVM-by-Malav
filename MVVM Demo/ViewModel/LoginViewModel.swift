@@ -39,34 +39,17 @@ class LoginViewModel: NSObject {
         self.googleManager = MSGoogleHelper.init(withPresentingController: controller, andDelegate: self)
     }
     
-    func validate(emailID email:String?) -> ValidationStatus {
-        guard let emailValue = email,emailValue.isEmpty == false else {
-            return (false,localizeStrings.enterEmail)
-        }
-        if emailValue.isValidEmail() == false{
-            return (false,localizeStrings.enterValidEmail)
-        }
-        return (true,"")
-    }
-    
-    func validate(passwordForLogin password:String?) -> ValidationStatus {
-        guard let passwordValue = password, passwordValue.isEmpty == false else {
-            return (false,localizeStrings.enterPassword)
-        }
-        return (true,"")
-    }
-    
     func validateCredentials(withEmail email:String?,andPassword password:String?) -> Void {
         
         // Validate Email
-        var validationResult = self.validate(emailID: email)
+        var validationResult = self.validate(email: email)
         guard validationResult.status == true else {
             self.delegate?.failedToLoggedIn(withErrorMessage: validationResult.errorMessage)
             return
         }
         
         // Validate Password
-        validationResult = self.validate(passwordForLogin: password)
+        validationResult = self.validate(password: password)
         guard validationResult.status == true else {
             self.delegate?.failedToLoggedIn(withErrorMessage: validationResult.errorMessage)
             return
@@ -81,6 +64,27 @@ class LoginViewModel: NSObject {
         // Call Login API
         // Implement your login api call here
         self.delegate?.failedToLoggedIn(withErrorMessage: "You forgot to implement your LOGIN API call in LoginViewModel Class\nOr you can Try to login with Google or Facebook")
+    }
+}
+
+
+// Validate your inputs
+extension LoginViewModel{
+    func validate(email:String?) -> ValidationStatus {
+        guard let emailValue = email,emailValue.isEmpty == false else {
+            return (false,localizeStrings.enterEmail)
+        }
+        if emailValue.isValidEmail() == false{
+            return (false,localizeStrings.enterValidEmail)
+        }
+        return (true,"")
+    }
+    
+    func validate(password:String?) -> ValidationStatus {
+        guard let passwordValue = password, passwordValue.isEmpty == false else {
+            return (false,localizeStrings.enterPassword)
+        }
+        return (true,"")
     }
 }
 
