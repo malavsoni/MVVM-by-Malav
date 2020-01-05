@@ -31,6 +31,7 @@ This project contains all the things which are generally used in any project.
 - Basic Extensions
 
 - Generalization of Classes
+- Test Cases for business logic
 
 I hope you guys like this project.
 
